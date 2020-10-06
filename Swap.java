@@ -11,11 +11,12 @@ public class Swap
 		
 		int a = s.nextInt();
 		int b = s.nextInt();
-        int temp;
-          System.out.println("Before Swapping Value of a and b is "+a+" "+ b);
-            temp=a;
-             a=b;
-            b=temp;
-          System.out.println("After Swapping Value of a and b is "+a+" "+ b);
+        	
+		int temp;
+         	 System.out.println("Before Swapping Value of a and b is "+a+" "+ b);
+           	 temp=a;
+           	 a=b;
+            	 b=temp;
+        	 System.out.println("After Swapping Value of a and b is "+a+" "+ b);
 	}
 }
