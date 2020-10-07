@@ -1,22 +1,30 @@
-// WAP to swap two number using temporary variable.
+/* Swap the Numbers using Xor or two variable concept.
+ * 
+ */
 
 import java.util.Scanner;
 
 public class Swap 
 {
+
 	public static void main(String[] args) 
 	{
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter value of a and b");
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Numbers ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		System.out.println("Before Swap the value "+ x +" "+ y);
+		x = x ^ y;
+		y = x ^ y;
+		x = x ^ y;
 		
-		int a = s.nextInt();
-		int b = s.nextInt();
-        	
-		int temp;
-         	 System.out.println("Before Swapping Value of a and b is "+a+" "+ b);
-           	 temp=a;
-           	 a=b;
-            	 b=temp;
-        	 System.out.println("After Swapping Value of a and b is "+a+" "+ b);
+		// x = x+y;
+		// y = x-y;
+		// x = x-y;
+		
+		System.out.println("After Swap the value "+ x +" "+ y);
+
 	}
+
 }
